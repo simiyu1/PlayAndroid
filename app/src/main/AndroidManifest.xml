@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.simlab.simiyu.playwithgooglesignin">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <!--<activity android:name=".MainActivity">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <activity
+                android:name="com.simlab.simiyu.playwithgooglesignin.ChooserActivity"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.simlab.simiyu.playwithgooglesignin.SignInActivity"
+                android:label="@string/name_sign_in_activity"
+                android:theme="@style/ThemeOverlay.MyNoTitleActivity">
+        </activity>
+        <activity
+                android:name="com.simlab.simiyu.playwithgooglesignin.SignInActivityWithDrive"
+                android:label="@string/name_sign_in_activity"
+                android:theme="@style/ThemeOverlay.MyNoTitleActivity">
+        </activity>
+        <activity
+                android:name="com.simlab.simiyu.playwithgooglesignin.IdTokenActivity"
+                android:label="@string/name_id_token_activity"
+                android:theme="@style/ThemeOverlay.MyNoTitleActivity">
+        </activity>
+
+        <activity
+                android:name="com.simlab.simiyu.playwithgooglesignin.ServerAuthCodeActivity"
+                android:label="@string/name_auth_code_activity"
+                android:theme="@style/ThemeOverlay.MyNoTitleActivity">
+        </activity>
+
+        <activity
+                android:name="com.simlab.simiyu.playwithgooglesignin.RestApiActivity"
+                android:label="@string/name_rest_activity"
+                android:theme="@style/ThemeOverlay.MyNoTitleActivity">
+        </activity>
+    </application>
+
+</manifest>
